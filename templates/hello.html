@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Zh_cn">
+<head>
+	<title> hello.html </title>
+</head>
+<body>
+<div>
+    {% if name %}
+    <a > {{ name }} </a> 
+    {% else %}
+    <a href="/">plz input your name</a> 
+    <form method="POST">
+        <input type="text" name="name" value="plz input your name">
+        <input type="submit">
+    </form>
+    {% endif %}
+</div>
+</body>
+</html>
